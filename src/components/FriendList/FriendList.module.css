@@ -1,0 +1,36 @@
+.friendList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 100px auto 100px auto;
+    width: 200px;
+    background-color: burlywood;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.status {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.status__active {
+    background-color: green;
+}
+
+.status__inactive {
+    background-color: red;
+}
