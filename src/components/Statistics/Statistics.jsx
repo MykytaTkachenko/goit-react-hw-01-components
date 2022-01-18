@@ -5,7 +5,7 @@ import styles from "./Statistics.module.css";
 const Statistics = (props) => {
     return (
         <section className={styles.statistics}>
-            <h2 className={styles.title}>{props.title}</h2>
+            {props.title && <h2 className={styles.title}>{props.title}</h2>}
 
             <ul className={styles.stat_list}>
             { props.statData.map(sData => (
@@ -22,6 +22,10 @@ const Statistics = (props) => {
 Statistics.propTypes = {
     title: PropTypes.string,
     statData: PropTypes.array.isRequired
+}
+
+Statistics.defaultProps = {
+    title: 'stat'
 }
 
 export default Statistics;

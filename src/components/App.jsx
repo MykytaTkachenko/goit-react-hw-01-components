@@ -11,12 +11,6 @@ import transactionData from "../data/transactions.json";
 const App = () => {
     return (
         <>
-            {/* { profileData.map((userData) => (
-                <Profile 
-                { ...userData } 
-                />
-            ))} */}
-
             <Profile
                 username = {profileData.username}
                 tag = {profileData.tag}
@@ -25,15 +19,11 @@ const App = () => {
                 stats = {profileData.stats}
             />
 
-            {/* { statisticsData.map((statData) => (
-                <Statistics 
-                title = "Upload stats"
-                { ...statData }
-                />
-            ))} */}
-
             <Statistics
                 title = "Upload stats"
+                statData = {statisticsData}
+            />
+            <Statistics 
                 statData = {statisticsData}
             />
 
